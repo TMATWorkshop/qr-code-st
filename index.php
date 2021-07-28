@@ -5,7 +5,6 @@
 <body>
 <script src="qrcode.js"></script>
 <script>
-    function createqr() {
         var parsedUrl = new URL(window.location.href);
         var val = 'test';
         val = parsedUrl.searchParams.get("val");
@@ -19,7 +18,7 @@
             colorLight : "#ffffff",
             correctLevel : QRCode.CorrectLevel.H
         });
-    }
+    
 </script>
 <div id="qrcode"></div>
 </body>
